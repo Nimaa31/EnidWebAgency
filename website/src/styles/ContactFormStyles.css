@@ -1,0 +1,87 @@
+.from-container {
+    margin: 4rem 6rem;
+    color: #2a2a2a;
+}
+
+.from-container form {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.txt-cf {
+    text-align: center;
+    color: white;
+}
+
+.light-theme .txt-cf, .choose__us-title {
+    color: #0c123d !important;
+}
+
+.blog__top-content h2 {
+    margin-bottom: -2rem;
+}
+
+.from-container h1,
+.from-container p {
+    text-align: center;
+}
+
+.from-container input,
+.from-container textarea,
+.from-container select {
+    height: 3.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #2a2a2a;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.from-container select {
+    appearance: none;
+    background: white;
+    border: 1px solid #2a2a2a;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+
+.from-container textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.from-container button {
+    display: inline;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+}
+.light-theme .from-container button{
+    color: #0c123d;
+}
+/* Ajoutez des styles de survol pour améliorer l'aspect visuel du bouton */
+.from-container button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+/* Ajoutez des media queries pour rendre le formulaire plus compact sur des écrans plus petits */
+@media only screen and (max-width: 768px) {
+    .from-container {
+        margin: 2rem;
+    }
+
+    .from-container form {
+        width: 80%;
+    }
+}
